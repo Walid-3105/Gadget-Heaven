@@ -9,9 +9,15 @@ const Home = () => {
     <div>
       <Banner></Banner>
       {/* Category tab section */}
-      <Categories categories={categories}></Categories>
-      {/* Dynamic Nested components */}
-      <Outlet></Outlet>
+      <div className="grid grid-cols-4 w-10/12 mx-auto">
+        <div className="col-span-1">
+          <Categories categories={categories}></Categories>
+        </div>
+        {/* Dynamic Nested components */}
+        <div className="col-span-3">
+          <Outlet></Outlet>
+        </div>
+      </div>
     </div>
   );
 };

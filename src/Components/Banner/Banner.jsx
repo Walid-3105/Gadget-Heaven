@@ -3,9 +3,9 @@ import React from "react";
 const Banner = () => {
   return (
     <>
-      <div className="px-5">
+      <div className="px-5 ">
         <div>
-          <div className="hero bg-[#9538E2] min-h-screen rounded-xl text-center">
+          <div className=" hero bg-[#9538E2] min-h-screen rounded-xl text-center">
             <div className="px-40">
               <h3 className="font-bold text-[56px] text-white">
                 Upgrade Your Tech Accessorize with Gadget Heaven Accessories
