@@ -6,7 +6,7 @@ import Categories from "../Categories/Categories";
 const Home = () => {
   const categories = useLoaderData();
   return (
-    <div>
+    <div className="bg-[#F7F7F7]">
       <Banner></Banner>
       {/* Category tab section */}
       <div className="grid grid-cols-4 w-10/12 mx-auto">
