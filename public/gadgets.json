@@ -1,0 +1,197 @@
+[
+  {
+    "product_id": 1,
+    "product_title": "Dell XPS 13",
+    "product_image": "https://example.com/images/dell_xps_13.jpg",
+    "category": "Laptops",
+    "price": 1000,
+    "description": "A powerful laptop with a sleek design and excellent performance.",
+    "Specification": ["Intel i7 Processor", "16GB RAM", "512GB SSD"],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": 2,
+    "product_title": "MacBook Air",
+    "product_image": "https://example.com/images/macbook_air.jpg",
+    "category": "Laptops",
+    "price": 1200,
+    "description": "Lightweight and powerful, perfect for everyday tasks.",
+    "Specification": ["Apple M1 Processor", "8GB RAM", "256GB SSD"],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_id": 3,
+    "product_title": "HP Spectre x360",
+    "product_image": "https://example.com/images/hp_spectre_x360.jpg",
+    "category": "Laptops",
+    "price": 1400,
+    "description": "A versatile 2-in-1 laptop with stunning display.",
+    "Specification": ["Intel i7 Processor", "16GB RAM", "1TB SSD"],
+    "availability": true,
+    "rating": 4.6
+  },
+  {
+    "product_id": 4,
+    "product_title": "Lenovo ThinkPad X1",
+    "product_image": "https://example.com/images/lenovo_thinkpad_x1.jpg",
+    "category": "Laptops",
+    "price": 1600,
+    "description": "Built for business with robust security features.",
+    "Specification": ["Intel i7 Processor", "16GB RAM", "1TB SSD"],
+    "availability": true,
+    "rating": 4.5
+  },
+  {
+    "product_id": 5,
+    "product_title": "ASUS ZenBook 14",
+    "product_image": "https://example.com/images/asus_zenbook_14.jpg",
+    "category": "Laptops",
+    "price": 900,
+    "description": "A stylish laptop with powerful performance.",
+    "Specification": ["Intel i5 Processor", "8GB RAM", "512GB SSD"],
+    "availability": true,
+    "rating": 4.4
+  },
+  {
+    "product_id": 6,
+    "product_title": "Microsoft Surface Laptop 4",
+    "product_image": "https://example.com/images/microsoft_surface_laptop_4.jpg",
+    "category": "Laptops",
+    "price": 1300,
+    "description": "Offers a great balance between performance and portability.",
+    "Specification": ["Intel i5 Processor", "8GB RAM", "256GB SSD"],
+    "availability": true,
+    "rating": 4.6
+  },
+  {
+    "product_id": 7,
+    "product_title": "iPhone 14",
+    "product_image": "https://example.com/images/iphone_14.jpg",
+    "category": "Phones",
+    "price": 800,
+    "description": "The latest iPhone with advanced camera features.",
+    "Specification": ["128GB Storage", "12MP Camera", "3279mAh Battery"],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": 8,
+    "product_title": "Samsung Galaxy S22",
+    "product_image": "https://example.com/images/samsung_galaxy_s22.jpg",
+    "category": "Phones",
+    "price": 750,
+    "description": "High-end smartphone with exceptional performance.",
+    "Specification": ["128GB Storage", "50MP Camera", "3700mAh Battery"],
+    "availability": true,
+    "rating": 4.5
+  },
+  {
+    "product_id": 9,
+    "product_title": "Google Pixel 7",
+    "product_image": "https://example.com/images/google_pixel_7.jpg",
+    "category": "Phones",
+    "price": 600,
+    "description": "Camera-focused smartphone with excellent AI features.",
+    "Specification": ["128GB Storage", "50MP Camera", "4355mAh Battery"],
+    "availability": true,
+    "rating": 4.6
+  },
+  {
+    "product_id": 10,
+    "product_title": "MacBook Pro 14",
+    "product_image": "https://example.com/images/macbook_pro_14.jpg",
+    "category": "MacBooks",
+    "price": 2000,
+    "description": "Professional-grade laptop with powerful features.",
+    "Specification": ["Apple M1 Pro Processor", "16GB RAM", "512GB SSD"],
+    "availability": true,
+    "rating": 4.9
+  },
+  {
+    "product_id": 11,
+    "product_title": "MacBook Pro 16",
+    "product_image": "https://example.com/images/macbook_pro_16.jpg",
+    "category": "MacBooks",
+    "price": 2500,
+    "description": "Ultimate MacBook for creative professionals.",
+    "Specification": ["Apple M1 Max Processor", "32GB RAM", "1TB SSD"],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_id": 12,
+    "product_title": "MacBook Air 15",
+    "product_image": "https://example.com/images/macbook_air_15.jpg",
+    "category": "MacBooks",
+    "price": 1400,
+    "description": "Larger display with the same lightweight design.",
+    "Specification": ["Apple M2 Processor", "8GB RAM", "256GB SSD"],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": 13,
+    "product_title": "Wireless Mouse",
+    "product_image": "https://example.com/images/wireless_mouse.jpg",
+    "category": "Accessories",
+    "price": 50,
+    "description": "Ergonomic wireless mouse with long battery life.",
+    "Specification": ["Wireless", "1 Year Battery Life", "Black Color"],
+    "availability": true,
+    "rating": 4.4
+  },
+  {
+    "product_id": 14,
+    "product_title": "USB-C Hub",
+    "product_image": "https://example.com/images/usb_c_hub.jpg",
+    "category": "Accessories",
+    "price": 70,
+    "description": "Multi-port hub for connecting peripherals.",
+    "Specification": [
+      "HDMI, USB-A, USB-C Ports",
+      "Aluminum Material",
+      "Compatible with Mac/Windows"
+    ],
+    "availability": true,
+    "rating": 4.5
+  },
+  {
+    "product_id": 15,
+    "product_title": "Laptop Stand",
+    "product_image": "https://example.com/images/laptop_stand.jpg",
+    "category": "Accessories",
+    "price": 50,
+    "description": "Adjustable laptop stand for ergonomic use.",
+    "Specification": ["Aluminum Material", "Adjustable Height", "Silver Color"],
+    "availability": true,
+    "rating": 4.6
+  },
+  {
+    "product_id": 16,
+    "product_title": "Sony WH-1000XM4",
+    "product_image": "https://example.com/images/sony_wh1000xm4.jpg",
+    "category": "Accessories",
+    "price": 350,
+    "description": "Noise-cancelling over-ear headphones.",
+    "Specification": [
+      "Over-ear Design",
+      "Noise Cancellation",
+      "30 Hours Battery Life"
+    ],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_id": 17,
+    "product_title": "Anker PowerCore Portable Charger",
+    "product_image": "https://example.com/images/anker_powercore.jpg",
+    "category": "Accessories",
+    "price": 60,
+    "description": "High-capacity portable charger for devices.",
+    "Specification": ["26800mAh Capacity", "3 USB Ports", "Compact Size"],
+    "availability": true,
+    "rating": 4.6
+  }
+]
