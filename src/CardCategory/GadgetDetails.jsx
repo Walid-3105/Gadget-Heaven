@@ -2,6 +2,9 @@ import { list } from "postcss";
 import React, { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import ReactStars from "react-rating-stars-component";
+import { MdOutlineShoppingCart } from "react-icons/md";
+import { FaRegHeart } from "react-icons/fa";
+import { addToCart } from "../Utility";
 const GadgetDetails = () => {
   const data = useLoaderData();
   const { product_id } = useParams();
@@ -29,6 +32,10 @@ const GadgetDetails = () => {
     size: 40,
     value: 2.5,
     edit: false,
+  };
+
+  const handleAddToCart = (gadget) => {
+    addToCart(gadget);
   };
   return (
     <div className="relative">
@@ -58,7 +65,7 @@ const GadgetDetails = () => {
               In Stock
             </button>
             <h2 className="font-normal text-lg opacity-60">{description}</h2>
-            <div>
+            <div className="pb-3">
               <span className="text-lg font-bold pb-3">Specification:</span>
               {Specification &&
                 Specification.map((cat, idx) => (
@@ -79,6 +86,18 @@ const GadgetDetails = () => {
                 </span>
               </div>
             </h4>
+            <div className="flex gap-2 pt-6">
+              <button
+                onClick={() => handleAddToCart(gadget)}
+                className="text-white hover:text-[#9538E2] btn rounded-3xl text-lg font-bold bg-[#9538E2] "
+              >
+                Add to Cart
+                <MdOutlineShoppingCart size={25}></MdOutlineShoppingCart>
+              </button>
+              <button className="btn border border-gray-400 rounded-full items-center ">
+                <FaRegHeart size={16}></FaRegHeart>
+              </button>
+            </div>
           </div>
         </div>
       </div>
