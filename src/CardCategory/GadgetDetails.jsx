@@ -7,10 +7,14 @@ const GadgetDetails = () => {
   const { product_id } = useParams();
   const [gadget, setGadget] = useState({});
 
-  useEffect(() => {
-    const singleData = data.find((gadget) => gadget.product_id == product_id);
-    setGadget(singleData);
-  }, [data, product_id]);
+  if (data) {
+    useEffect(() => {
+      const singleData = data.find((gadget) => gadget.product_id == product_id);
+      setGadget(singleData);
+    }, [data, product_id]);
+  } else {
+    ("");
+  }
 
   const {
     product_image,
