@@ -2,19 +2,29 @@ import React, { useEffect, useState } from "react";
 import { FaRegHeart } from "react-icons/fa";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import { getAllCart } from "../../Utility";
+import { Helmet } from "react-helmet";
 
 const NavBar = () => {
-  // const [carts, setCarts] = useState([]);
-  // useEffect(() => {
-  //   const cart = getAllCart();
-  //   setCarts(cart);
-  // }, []);
+  const [carts, setCarts] = useState([]);
+  useEffect(() => {
+    const cart = getAllCart();
+    setCarts(cart);
+  }, []);
 
   const location = useLocation();
   const isHomeActive = location.pathname === "/";
-
+  const getPageTitle = () => {
+    const path = location.pathname;
+    if (path === "/") return "Home | Gadget Heaven";
+    if (path === "/dashboard") return "Dashboard | Gadget Heaven";
+    if (path === "/statistics") return "Statistics | Gadget Heaven";
+    return "Gadget Heaven";
+  };
   return (
     <div className="px-5 w-full z-50">
+      <Helmet>
+        <title>{getPageTitle()}</title>
+      </Helmet>
       <div
         className={`navbar backdrop-blur-xl ${
           isHomeActive ? "bg-[#9538E2]" : "bg-white"
@@ -129,7 +139,9 @@ const NavBar = () => {
                       d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
                     />
                   </svg>
-                  <span className="badge badge-sm indicator-item">0</span>
+                  <span className="badge badge-sm indicator-item">
+                    {carts.length}
+                  </span>
                 </div>
               </div>
               <div
@@ -137,13 +149,7 @@ const NavBar = () => {
                 className="card card-compact dropdown-content bg-base-100 z-[1] mt-3 w-52 shadow"
               >
                 <div className="card-body">
-                  <span className="text-lg font-bold">8 Items</span>
-                  <span className="text-info">Subtotal: $999</span>
-                  <div className="card-actions">
-                    <button className="btn btn-primary btn-block">
-                      View cart
-                    </button>
-                  </div>
+                  <span className="text-lg font-bold">{carts.length}</span>
                 </div>
               </div>
             </div>

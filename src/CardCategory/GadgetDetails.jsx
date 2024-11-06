@@ -13,7 +13,7 @@ const GadgetDetails = () => {
   if (data) {
     useEffect(() => {
       const singleData = data.find((gadget) => gadget.product_id == product_id);
-      setGadget(singleData);
+      setGadget(singleData || {});
     }, [data, product_id]);
   } else {
     ("");
@@ -28,17 +28,17 @@ const GadgetDetails = () => {
     rating,
   } = gadget;
 
-  const firstExample = {
-    size: 40,
-    value: 2.5,
-    edit: false,
-  };
-
   const handleAddToCart = (gadget) => {
     addToCart(gadget);
   };
   const handleAddWishList = (gadget) => {
     addToWishList(gadget);
+  };
+  const ratingConfig = {
+    size: 40,
+    value: 4,
+    edit: false,
+    isHalf: true,
   };
   return (
     <div className="relative">
@@ -83,7 +83,7 @@ const GadgetDetails = () => {
             <h4>
               <span className="font-bold text-lg">Rating:</span>
               <div className="flex items-center gap-2">
-                <ReactStars {...firstExample}></ReactStars>
+                <ReactStars {...ratingConfig}></ReactStars>
                 <span className="bg-slate-200 px-3 py-1 rounded-2xl">
                   {rating}
                 </span>

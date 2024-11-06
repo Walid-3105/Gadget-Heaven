@@ -24,11 +24,13 @@ const addToCart = (gadget) => {
 };
 
 // remove a gadget from local storage
-const removeFormCart = (product_id) => {
+const removeFormCart = (product_id, showToast = true) => {
   const cart = getAllCart();
   const remaining = cart.filter((cart) => cart.product_id != product_id);
   localStorage.setItem("cart", JSON.stringify(remaining));
-  toast.success("Successfully Removed!");
+  if (showToast) {
+    toast.success("Successfully Removed!");
+  }
 };
 
 // get all gadgets data from local storage -1
