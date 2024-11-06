@@ -5,7 +5,7 @@
     "product_image": "https://i.ibb.co.com/CmSy3VS/Dell-XPS-13.jpg",
     "category": "Laptops",
     "price": 1000,
-    "description": "A powerful laptop with a sleek design and excellent performance.",
+    "description": "A powerful laptop with excellent performance.",
     "Specification": ["Intel i7 Processor", "16GB RAM", "512GB SSD"],
     "availability": true,
     "rating": 4.7

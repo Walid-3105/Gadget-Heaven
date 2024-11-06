@@ -7,7 +7,7 @@ const Dashboard = () => {
 
   return (
     <div>
-      <div className=" hero bg-[#9538E2] h-[286px] rounded-b-xl text-center">
+      <div className=" hero bg-[#9538E2] h-[286px] text-center">
         <div className="px-40 ">
           <h3 className="font-bold text-[32px] text-white mb-5">Dashboard</h3>
           <p className="font-normal text-white px-32 mb-4">
@@ -37,16 +37,27 @@ const Dashboard = () => {
           </button>
         </div>
       </div>
-      <div className="p-5">
+      <div className="p-5 bg-[#efefef]">
         {activeCarts === "cart" && (
-          <div>
-            <h3 className="font-bold text-xl">Cart Items</h3>
+          <div className="w-[1250px] mx-auto px-5 ">
+            {/* <div className="flex justify-between">
+              <h3 className="font-bold text-2xl">Cart</h3>
+              <div className="flex gap-4">
+                <h4 className="font-bold text-2xl">Total Coast:</h4>
+                <button className="font-bold text-[#9538E2] bg-white rounded-3xl py-2 px-7">
+                  Sort By Price
+                </button>
+                <button className="font-bold text-white bg-[#9538E2] rounded-3xl py-2 px-5">
+                  Purchase
+                </button>
+              </div>
+            </div> */}
             <Cart></Cart>
           </div>
         )}
         {activeCarts === "wishlist" && (
-          <div>
-            <h3 className="font-bold text-xl">Wishlist Items</h3>
+          <div className="w-[1250px] mx-auto px-5">
+            <h3 className="font-bold text-xl ">Wishlist Items</h3>
             <Wishlist></Wishlist>
           </div>
         )}
@@ -56,25 +67,3 @@ const Dashboard = () => {
 };
 
 export default Dashboard;
-
-{
-  /* <NavLink
-            to="./cart"
-            className={({ isActive }) =>
-              `font-bold rounded-3xl border-gray-400 bg-white py-2 px-7 ${
-                isActive ? "bg-white text-[#9538E2]" : "bg-[#9538E2] text-white"
-              }`
-            }
-          >
-            Cart
-          </NavLink>
-          <NavLink
-            className={({ isActive }) =>
-              `font-bold rounded-3xl border-gray-400 bg-white py-2 px-7 ${
-                isActive ? "bg-white text-[#9538E2]" : "bg-[#9538E2] text-white"
-              }`
-            }
-          >
-            Shop Now
-          </NavLink> */
-}

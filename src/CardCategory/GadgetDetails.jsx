@@ -4,7 +4,7 @@ import { useLoaderData, useParams } from "react-router-dom";
 import ReactStars from "react-rating-stars-component";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { FaRegHeart } from "react-icons/fa";
-import { addToCart } from "../Utility";
+import { addToCart, addToWishList } from "../Utility";
 const GadgetDetails = () => {
   const data = useLoaderData();
   const { product_id } = useParams();
@@ -36,6 +36,9 @@ const GadgetDetails = () => {
 
   const handleAddToCart = (gadget) => {
     addToCart(gadget);
+  };
+  const handleAddWishList = (gadget) => {
+    addToWishList(gadget);
   };
   return (
     <div className="relative">
@@ -94,7 +97,10 @@ const GadgetDetails = () => {
                 Add to Cart
                 <MdOutlineShoppingCart size={25}></MdOutlineShoppingCart>
               </button>
-              <button className="btn border border-gray-400 rounded-full items-center ">
+              <button
+                onClick={() => handleAddWishList(gadget)}
+                className="btn border border-gray-400 rounded-full items-center "
+              >
                 <FaRegHeart size={16}></FaRegHeart>
               </button>
             </div>
