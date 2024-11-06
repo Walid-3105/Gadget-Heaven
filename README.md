@@ -1,19 +1,30 @@
-# Project Name: Gadget Heaven 
+# Project Name: Gadget Heaven
 
 # Fundamental concepts used in the project:
 
 ## 1. Components
+
 Building reusable, functional components like GadgetDetails and Statistics to structure the UI efficiently.
+
 ## 2. State Management with useState
+
 Using useState to manage local state within components, such as tracking items in the cart and wishlist.
+
 ## 3. Props
+
 Passing data between components through props to make components flexible and reusable.
+
 ## 4. React Router
+
 Navigating between different pages, accessing parameters with useParams, and fetching data directly via useLoaderData.
+
 ## 5. Hooks (useState, useEffect)
+
 useEffect for running side effects like fetching data when dependencies change.
 useState for handling stateful logic within functional components.
+
 ## 6. Conditional Rendering
+
 Showing or hiding elements based on conditions, such as disabling buttons after clicking or rendering different content based on data presence.
 
 # What I have used for handling and managing data:
@@ -32,10 +43,10 @@ Showing or hiding elements based on conditions, such as disabling buttons after 
 
 ## 5.Dynamic Data Display with Charts: The statistics page features a line or bar chart to visualize product data, making information easy to interpret at a glance.
 
-
 # Live Link:
-Netlify:https://walid-assignment-8.netlify.app/
-Surge:https://unruly-jelly.surge.sh/
 
+# Netlify: https://walid-assignment-8.netlify.app/
 
-Document Link:file:///C:/PH%20Web%20Devlopment%20Course/Milestone%208/B10-A8-gadget-heaven/Batch-10_Assignment-08.pdf
+# Surge: https://unruly-jelly.surge.sh/
+
+# Document Link: file:///C:/PH%20Web%20Devlopment%20Course/Milestone%208/B10-A8-gadget-heaven/Batch-10_Assignment-08.pdf

@@ -14,7 +14,7 @@ const Categories = ({ categories }) => {
             to={`/category/${category.category}`}
             role="tab"
             className={({ isActive }) =>
-              `tab justify-start w-32 px-4 items-start bg-slate-200 ${
+              `tab justify-start w-32 px-4 items-start hover:bg-[#1a34f4dc] hover:text-white bg-slate-200 ${
                 isActive ? "tab-active" : ""
               }`
             }

@@ -28,7 +28,7 @@ const NavBar = () => {
       </Helmet>
       <div
         className={`navbar backdrop-blur-xl ${
-          isHomeActive ? "bg-[#9538E2]" : "bg-white"
+          isHomeActive ? "bg-[#9538E2] text-white" : "bg-white text-black"
         } bg-[#9538E2] rounded-t-xl w-full`}
       >
         <div className="navbar-start ">
@@ -55,7 +55,7 @@ const NavBar = () => {
             >
               <NavLink
                 className={({ isActive }) =>
-                  `font-bold  ${
+                  `font-bold ${
                     isActive ? "text-warning" : "hover:text-warning"
                   }`
                 }
@@ -95,7 +95,7 @@ const NavBar = () => {
               </NavLink>
             </ul>
           </div>
-          <Link to="./" className="btn px-0 btn-ghost text-xl">
+          <Link to="./" className="btn px-0 btn-ghost text-2xl">
             Gadget Heaven
           </Link>
         </div>
@@ -103,7 +103,9 @@ const NavBar = () => {
           <ul className="menu menu-horizontal px-1 gap-8">
             <NavLink
               className={({ isActive }) =>
-                `font-bold  ${isActive ? "text-warning" : "hover:text-warning"}`
+                `font-bold text-base ${
+                  isActive ? "text-warning" : "hover:text-warning"
+                }`
               }
               to="./"
             >
@@ -111,7 +113,9 @@ const NavBar = () => {
             </NavLink>
             <NavLink
               className={({ isActive }) =>
-                `font-bold  ${isActive ? "text-warning" : "hover:text-warning"}`
+                `font-bold text-base ${
+                  isActive ? "text-warning" : "hover:text-warning"
+                }`
               }
               to="./statistics"
             >
@@ -119,7 +123,9 @@ const NavBar = () => {
             </NavLink>
             <NavLink
               className={({ isActive }) =>
-                `font-bold  ${isActive ? "text-warning" : "hover:text-warning"}`
+                `font-bold text-base ${
+                  isActive ? "text-warning" : "hover:text-warning"
+                }`
               }
               to="./dashboard"
             >
@@ -127,7 +133,9 @@ const NavBar = () => {
             </NavLink>
             <NavLink
               className={({ isActive }) =>
-                `font-bold  ${isActive ? "text-warning" : "hover:text-warning"}`
+                `font-bold text-base ${
+                  isActive ? "text-warning" : "hover:text-warning"
+                }`
               }
               to="./contact"
             >
@@ -181,20 +189,7 @@ const NavBar = () => {
               <ul
                 tabIndex={0}
                 className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
-              >
-                <li>
-                  <a className="justify-between">
-                    Profile
-                    <span className="badge">New</span>
-                  </a>
-                </li>
-                <li>
-                  <a>Settings</a>
-                </li>
-                <li>
-                  <a>Logout</a>
-                </li>
-              </ul>
+              ></ul>
             </div>
           </div>
         </div>
