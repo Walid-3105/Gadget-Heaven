@@ -15,7 +15,7 @@ const Card = ({ gadget }) => {
         </figure>
         <div>
           <h3 className="text-2xl font-semibold mt-6 mb-3">{product_title}</h3>
-          <p className="text-xl font-medium opacity-60 mb-3">{price} k</p>
+          <p className="text-xl font-medium opacity-60 mb-3">{price} $</p>
         </div>
         <div className="mt-auto bottom-0">
           <Link to={`./gadget/${product_id}`}>

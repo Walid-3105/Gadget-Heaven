@@ -4,13 +4,16 @@ import MainLayout from "../layouts/MainLayout";
 import Statistics from "../Components/Statistics/Statistics";
 import Home from "../Components/Home/Home";
 import Dashboard from "../Components/Dashboard/Dashboard";
-
+import SmartWatches from "../Components/SmartWatches/SmartWatches";
 import GadgetsCards from "../CardCategory/GadgetsCards";
 import GadgetDetails from "../CardCategory/GadgetDetails";
+import ErrorPage from "../Components/ErrorPage/ErrorPage";
+import Contact from "../Components/Contact/Contact";
 const routes = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout></MainLayout>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",
@@ -32,6 +35,10 @@ const routes = createBrowserRouter([
             element: <GadgetsCards></GadgetsCards>,
             loader: () => fetch("/gadgets.json"),
           },
+          {
+            path: "/category/Smart Watches",
+            element: <SmartWatches></SmartWatches>,
+          },
         ],
       },
       {
@@ -39,6 +46,7 @@ const routes = createBrowserRouter([
         element: <GadgetDetails></GadgetDetails>,
         loader: () => fetch("/gadgets.json"),
       },
+
       {
         path: "/category/:category/gadget/:product_id",
         element: <GadgetDetails></GadgetDetails>,
@@ -46,11 +54,16 @@ const routes = createBrowserRouter([
       },
       {
         path: "/statistics",
+        loader: () => fetch("/gadgets.json"),
         element: <Statistics></Statistics>,
       },
       {
         path: "/dashboard",
         element: <Dashboard></Dashboard>,
+      },
+      {
+        path: "/contact",
+        element: <Contact></Contact>,
       },
     ],
   },

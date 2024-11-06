@@ -13,7 +13,7 @@ const GadgetsCards = () => {
       );
       setGadgets(filterByCategory);
     } else {
-      setGadgets(data.slice(0, 9));
+      setGadgets(data);
     }
   }, [category, data]);
   return (

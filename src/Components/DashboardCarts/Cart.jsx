@@ -66,9 +66,9 @@ const Cart = () => {
   return (
     <div>
       <div className="flex justify-between">
-        <h3 className="font-bold text-2xl">Cart</h3>
+        <h3 className="font-bold text-2xl ">Cart</h3>
         <div className="flex gap-4">
-          <h4 className="font-bold text-2xl">Total Coast: {totalMoney}</h4>
+          <h4 className="font-bold text-2xl">Total Coast: {totalMoney} $</h4>
           <button
             onClick={() => handleSortByPrice("price")}
             className="hover:bg-[#9538E2] hover:text-white font-bold text-[#9538E2] bg-white rounded-3xl py-2 px-7"

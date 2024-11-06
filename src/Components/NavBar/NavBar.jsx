@@ -18,6 +18,7 @@ const NavBar = () => {
     if (path === "/") return "Home | Gadget Heaven";
     if (path === "/dashboard") return "Dashboard | Gadget Heaven";
     if (path === "/statistics") return "Statistics | Gadget Heaven";
+    if (path === "/contact") return "Contact | Gadget Heaven";
     return "Gadget Heaven";
   };
   return (
@@ -82,6 +83,16 @@ const NavBar = () => {
               >
                 Dashboard
               </NavLink>
+              <NavLink
+                className={({ isActive }) =>
+                  `font-bold  ${
+                    isActive ? "text-warning" : "hover:text-warning"
+                  }`
+                }
+                to="./contact"
+              >
+                Contact
+              </NavLink>
             </ul>
           </div>
           <Link to="./" className="btn px-0 btn-ghost text-xl">
@@ -113,6 +124,14 @@ const NavBar = () => {
               to="./dashboard"
             >
               Dashboard
+            </NavLink>
+            <NavLink
+              className={({ isActive }) =>
+                `font-bold  ${isActive ? "text-warning" : "hover:text-warning"}`
+              }
+              to="./contact"
+            >
+              Contact
             </NavLink>
           </ul>
         </div>

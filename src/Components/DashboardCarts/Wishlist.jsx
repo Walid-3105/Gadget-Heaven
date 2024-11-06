@@ -15,7 +15,7 @@ const Wishlist = () => {
   };
   return (
     <div>
-      <h3 className="w-[1250px] mx-auto ">Wishlist</h3>
+      <h3 className="w-[1250px] mx-auto font-bold text-2xl">Wishlist</h3>
       {wishlists &&
         wishlists.map((data) => (
           <WishlistCard

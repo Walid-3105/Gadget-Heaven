@@ -12,6 +12,17 @@
   },
   {
     "product_id": 2,
+    "product_title": "Portable Charger",
+    "product_image": "https://i.ibb.co.com/pX89rDC/Anker-Power-Core-Portable-Charger.jpg",
+    "category": "Accessories",
+    "price": 60,
+    "description": "High-capacity portable charger for devices.",
+    "Specification": ["26800mAh Capacity", "3 USB Ports", "Compact Size"],
+    "availability": true,
+    "rating": 4.6
+  },
+  {
+    "product_id": 2,
     "product_title": "MacBook Air",
     "product_image": "https://i.ibb.co.com/nkk7js6/Mac-Book-Air.jpg",
     "category": "Laptops",
@@ -23,14 +34,18 @@
   },
   {
     "product_id": 3,
-    "product_title": "HP Spectre x360",
-    "product_image": "https://i.ibb.co.com/1b8sygH/HP-Spectre-x360.jpg",
-    "category": "Laptops",
-    "price": 1400,
-    "description": "A versatile 2-in-1 laptop with stunning display.",
-    "Specification": ["Intel i7 Processor", "16GB RAM", "1TB SSD"],
+    "product_title": "Sony WH-1000XM4",
+    "product_image": "https://i.ibb.co.com/n63TgL3/Sony-WH-1000-XM4.jpg",
+    "category": "Accessories",
+    "price": 350,
+    "description": "Noise-cancelling over-ear headphones.",
+    "Specification": [
+      "Over-ear Design",
+      "Noise Cancellation",
+      "30 Hours Battery Life"
+    ],
     "availability": true,
-    "rating": 4.6
+    "rating": 4.8
   },
   {
     "product_id": 4,
@@ -56,14 +71,18 @@
   },
   {
     "product_id": 6,
-    "product_title": "MS Laptop 4",
-    "product_image": "https://i.ibb.co.com/kKwZjJC/Microsoft-Surface-Laptop-4.jpg",
-    "category": "Laptops",
-    "price": 1300,
-    "description": "Offers a great balance between performance and portability.",
-    "Specification": ["Intel i5 Processor", "8GB RAM", "256GB SSD"],
+    "product_title": "USB-C Hub",
+    "product_image": "https://i.ibb.co.com/RvBDSJ8/USB-C-Hub.jpg",
+    "category": "Accessories",
+    "price": 70,
+    "description": "Multi-port hub for connecting peripherals.",
+    "Specification": [
+      "HDMI, USB-A, USB-C Ports",
+      "Aluminum Material",
+      "Compatible with Mac/Windows"
+    ],
     "availability": true,
-    "rating": 4.6
+    "rating": 4.5
   },
   {
     "product_id": 7,
@@ -78,14 +97,14 @@
   },
   {
     "product_id": 8,
-    "product_title": "Samsung S22",
-    "product_image": "https://i.ibb.co.com/yFyM2Yg/Samsung-Galaxy-S22.jpg",
-    "category": "Phones",
-    "price": 750,
-    "description": "High-end smartphone with exceptional performance.",
-    "Specification": ["128GB Storage", "50MP Camera", "3700mAh Battery"],
+    "product_title": "Wireless Mouse",
+    "product_image": "https://i.ibb.co.com/GVsF7pP/Wireless-Mouse.jpg",
+    "category": "Accessories",
+    "price": 50,
+    "description": "Ergonomic wireless mouse with long battery life.",
+    "Specification": ["Wireless", "1 Year Battery Life", "Black Color"],
     "availability": true,
-    "rating": 4.5
+    "rating": 4.4
   },
   {
     "product_id": 9,
@@ -133,29 +152,25 @@
   },
   {
     "product_id": 13,
-    "product_title": "Wireless Mouse",
-    "product_image": "https://i.ibb.co.com/GVsF7pP/Wireless-Mouse.jpg",
-    "category": "Accessories",
-    "price": 50,
-    "description": "Ergonomic wireless mouse with long battery life.",
-    "Specification": ["Wireless", "1 Year Battery Life", "Black Color"],
+    "product_title": "Samsung S22",
+    "product_image": "https://i.ibb.co.com/yFyM2Yg/Samsung-Galaxy-S22.jpg",
+    "category": "Phones",
+    "price": 750,
+    "description": "High-end smartphone with exceptional performance.",
+    "Specification": ["128GB Storage", "50MP Camera", "3700mAh Battery"],
     "availability": true,
-    "rating": 4.4
+    "rating": 4.5
   },
   {
     "product_id": 14,
-    "product_title": "USB-C Hub",
-    "product_image": "https://i.ibb.co.com/RvBDSJ8/USB-C-Hub.jpg",
-    "category": "Accessories",
-    "price": 70,
-    "description": "Multi-port hub for connecting peripherals.",
-    "Specification": [
-      "HDMI, USB-A, USB-C Ports",
-      "Aluminum Material",
-      "Compatible with Mac/Windows"
-    ],
+    "product_title": "MS Laptop 4",
+    "product_image": "https://i.ibb.co.com/kKwZjJC/Microsoft-Surface-Laptop-4.jpg",
+    "category": "Laptops",
+    "price": 1300,
+    "description": "Offers a great balance between performance and portability.",
+    "Specification": ["Intel i5 Processor", "8GB RAM", "256GB SSD"],
     "availability": true,
-    "rating": 4.5
+    "rating": 4.6
   },
   {
     "product_id": 15,
@@ -170,28 +185,24 @@
   },
   {
     "product_id": 16,
-    "product_title": "Sony WH-1000XM4",
-    "product_image": "https://i.ibb.co.com/n63TgL3/Sony-WH-1000-XM4.jpg",
-    "category": "Accessories",
-    "price": 350,
-    "description": "Noise-cancelling over-ear headphones.",
-    "Specification": [
-      "Over-ear Design",
-      "Noise Cancellation",
-      "30 Hours Battery Life"
-    ],
+    "product_title": "HP Spectre x360",
+    "product_image": "https://i.ibb.co.com/1b8sygH/HP-Spectre-x360.jpg",
+    "category": "Laptops",
+    "price": 1400,
+    "description": "A versatile 2-in-1 laptop with stunning display.",
+    "Specification": ["Intel i7 Processor", "16GB RAM", "1TB SSD"],
     "availability": true,
-    "rating": 4.8
+    "rating": 4.6
   },
   {
     "product_id": 17,
-    "product_title": "Portable Charger",
-    "product_image": "https://i.ibb.co.com/pX89rDC/Anker-Power-Core-Portable-Charger.jpg",
-    "category": "Accessories",
-    "price": 60,
-    "description": "High-capacity portable charger for devices.",
-    "Specification": ["26800mAh Capacity", "3 USB Ports", "Compact Size"],
+    "product_title": "MacBook Air",
+    "product_image": "https://i.ibb.co.com/nkk7js6/Mac-Book-Air.jpg",
+    "category": "Laptops",
+    "price": 1200,
+    "description": "Lightweight and powerful, perfect for everyday tasks.",
+    "Specification": ["Apple M1 Processor", "8GB RAM", "256GB SSD"],
     "availability": true,
-    "rating": 4.6
+    "rating": 4.8
   }
 ]

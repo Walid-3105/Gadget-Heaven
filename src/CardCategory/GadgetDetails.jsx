@@ -99,7 +99,7 @@ const GadgetDetails = () => {
               </button>
               <button
                 onClick={() => handleAddWishList(gadget)}
-                className="btn border border-gray-400 rounded-full items-center "
+                className="bg-slate-300 btn border border-gray-400 rounded-full items-center "
               >
                 <FaRegHeart size={16}></FaRegHeart>
               </button>

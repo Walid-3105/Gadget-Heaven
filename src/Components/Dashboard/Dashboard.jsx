@@ -57,7 +57,7 @@ const Dashboard = () => {
         )}
         {activeCarts === "wishlist" && (
           <div className="w-[1250px] mx-auto px-5">
-            <h3 className="font-bold text-xl ">Wishlist Items</h3>
+            
             <Wishlist></Wishlist>
           </div>
         )}
