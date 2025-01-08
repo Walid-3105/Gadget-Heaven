@@ -40,18 +40,6 @@ const Dashboard = () => {
       <div className="p-5 bg-[#efefef]">
         {activeCarts === "cart" && (
           <div className="w-[1250px] mx-auto px-5 ">
-            {/* <div className="flex justify-between">
-              <h3 className="font-bold text-2xl">Cart</h3>
-              <div className="flex gap-4">
-                <h4 className="font-bold text-2xl">Total Coast:</h4>
-                <button className="font-bold text-[#9538E2] bg-white rounded-3xl py-2 px-7">
-                  Sort By Price
-                </button>
-                <button className="font-bold text-white bg-[#9538E2] rounded-3xl py-2 px-5">
-                  Purchase
-                </button>
-              </div>
-            </div> */}
             <Cart></Cart>
           </div>
         )}

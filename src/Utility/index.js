@@ -33,7 +33,7 @@ const removeFormCart = (product_id, showToast = true) => {
   }
 };
 
-// get all gadgets data from local storage -1
+// get all gadgets data from local storage -2
 const getAllWishList = () => {
   const all = localStorage.getItem("wishList");
   if (all) {
