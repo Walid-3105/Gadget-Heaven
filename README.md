@@ -43,5 +43,5 @@
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/gadget-heaven.git
+   git clone https://github.com/Walid-3105/gadget-heaven.git
    ```
